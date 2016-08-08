@@ -17,8 +17,12 @@
     color: @main-text-color;
     line-height: 1.5;
 
+    &:first-of-type {
+        margin-top: 30px;
+    }
+
     &:not(:last-child) {
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 
     p {
@@ -182,13 +186,18 @@
         }
 
         img {
-            border-radius: 5px;
+            border-radius: 3px;
             max-width: 100%;
         }
     }
 
     .image-wrapper ~ .image-wrapper {
         clear: none;
+    }
+
+    .cropped-image {
+        border-radius: 3px;
+        z-index: 1;
     }
 
     &.hotspot-on-image-container {
